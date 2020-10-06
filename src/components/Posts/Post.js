@@ -20,9 +20,8 @@ const Post = (props) => {
         numberOfLikes={post.likes}
       />
       {/* Comments also wants its props! */}
-      {post.comments.map((comment) => {
-        return <Comments key={comment.id} comment={comment} />
-      })}
+       <Comments comments={post.comments} />
+      
       
     </div>
   );
